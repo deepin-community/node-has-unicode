@@ -1,0 +1,14 @@
+node-has-unicode (2.0.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Reupload to unstable
+  * Bump standards version to 4.0.0
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 06 Jul 2017 13:50:02 +0530
+
+node-has-unicode (2.0.1-1) experimental; urgency=low
+
+  * Initial release (Closes: #850123)
+
+ -- Yogiraj Kulkarni <yogirajkulkarni1411@gmail.com>  Wed, 04 Jan 2017 10:27:29 +0000
+
