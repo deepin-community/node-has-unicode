@@ -1,23 +1,24 @@
 Source: node-has-unicode
-Section: web
+Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Yogiraj Kulkarni <yogirajkulkarni1411@gmail.com>
-Build-Depends:
- debhelper (>= 9)
- , dh-buildinfo
- , nodejs
-Standards-Version: 4.0.0
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-require-inject <!nocheck>
+ , node-tap <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-has-unicode
+Vcs-Git: https://salsa.debian.org/js-team/node-has-unicode.git
 Homepage: https://github.com/iarna/has-unicode
-Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-has-unicode.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-has-unicode.git
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-has-unicode
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: Try to guess if your terminal supports unicode
- What we actually detect is UTF-8 support, as that's what Node itself supports.
+ This module actually detects UTF-8 support.
  .
  Node.js is an event-based server-side JavaScript engine.
